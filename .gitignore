@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Playwright
+/test-results
+/playwright-report
+
+# npm pack output
+*.tgz
+
+# Logs
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode-test/
+
+# Environment
+.env
+.env.local

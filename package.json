@@ -1,0 +1,76 @@
+{
+  "name": "@iskyex/axios-playwright-adapter",
+  "version": "0.1.0",
+  "description": "Playwright adapter for axios - route HTTP requests through Playwright's APIRequestContext for trace visibility",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bunup",
+    "dev": "bunup --watch",
+    "test": "bun test tests/utils tests/adapter.test.ts",
+    "test:pw": "bunx playwright test",
+    "prepublishOnly": "bun run build && bun run test"
+  },
+  "keywords": [
+    "axios",
+    "playwright",
+    "adapter",
+    "http",
+    "api",
+    "testing",
+    "e2e",
+    "trace",
+    "debugging"
+  ],
+  "author": "SkyeYoung",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyeYoung/axios-playwright-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SkyeYoung/axios-playwright-adapter/issues"
+  },
+  "homepage": "https://github.com/SkyeYoung/axios-playwright-adapter#readme",
+  "peerDependencies": {
+    "axios": "^1.8.0",
+    "@playwright/test": "^1.50.0"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/test": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/bun": "latest",
+    "axios": "^1.13.2",
+    "bunup": "^0.16.17",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
