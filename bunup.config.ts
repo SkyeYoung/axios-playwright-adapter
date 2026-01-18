@@ -7,5 +7,5 @@ export default defineConfig({
   clean: true,
   minify: false,
   sourcemap: true,
-  external: ['axios', '@playwright/test', 'playwright', 'playwright-core'],
+  external: ['axios', '@playwright/test', 'playwright', 'playwright-core', '@better-fetch/fetch'],
 });

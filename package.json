@@ -1,6 +1,6 @@
 {
   "name": "@iskyex/axios-playwright-adapter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Playwright adapter for axios - route HTTP requests through Playwright's APIRequestContext for trace visibility",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -26,7 +26,7 @@
   "scripts": {
     "build": "bunup",
     "dev": "bunup --watch",
-    "test": "bun test tests/utils tests/adapter.test.ts",
+    "test": "bun test tests/utils tests/adapter.test.ts tests/fetch-adapter.test.ts",
     "test:pw": "bunx playwright test",
     "prepublishOnly": "bun run build && bun run test"
   },
@@ -61,6 +61,7 @@
     }
   },
   "devDependencies": {
+    "@better-fetch/fetch": "^1.1.21",
     "@playwright/test": "^1.57.0",
     "@types/bun": "latest",
     "axios": "^1.13.2",

@@ -82,23 +82,23 @@ Works with interceptors, SDKs, FormData, file uploads, and all standard axios fe
 
 Creates an axios adapter that routes requests through Playwright.
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `failOnStatusCode` | `boolean` | `false` | Throw on non-2xx/3xx responses |
-| `ignoreHTTPSErrors` | `boolean` | - | Ignore SSL errors |
-| `maxRedirects` | `number` | `20` | Max redirects to follow |
-| `maxRetries` | `number` | `0` | Retry attempts on network errors |
+| Option              | Type      | Default | Description                      |
+| ------------------- | --------- | ------- | -------------------------------- |
+| `failOnStatusCode`  | `boolean` | `false` | Throw on non-2xx/3xx responses   |
+| `ignoreHTTPSErrors` | `boolean` | -       | Ignore SSL errors                |
+| `maxRedirects`      | `number`  | `20`    | Max redirects to follow          |
+| `maxRetries`        | `number`  | `0`     | Retry attempts on network errors |
 
 ### `createPlaywrightFetch(requestContext, options?)`
 
 Creates a fetch-compatible function for use with better-fetch and other fetch-based clients.
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `timeout` | `number` | - | Request timeout in milliseconds |
-| `ignoreHTTPSErrors` | `boolean` | - | Ignore SSL errors |
-| `maxRedirects` | `number` | `20` | Max redirects to follow |
-| `maxRetries` | `number` | `0` | Retry attempts on network errors |
+| Option              | Type      | Default | Description                      |
+| ------------------- | --------- | ------- | -------------------------------- |
+| `timeout`           | `number`  | -       | Request timeout in milliseconds  |
+| `ignoreHTTPSErrors` | `boolean` | -       | Ignore SSL errors                |
+| `maxRedirects`      | `number`  | `20`    | Max redirects to follow          |
+| `maxRetries`        | `number`  | `0`     | Retry attempts on network errors |
 
 ## Limitations
 
@@ -108,11 +108,14 @@ Creates a fetch-compatible function for use with better-fetch and other fetch-ba
 
 ## Compatibility
 
-| Package | Version |
-|---------|---------|
-| axios | ^1.8.0 |
-| @playwright/test | ^1.50.0 |
-| Node.js | 18+ |
+| Package             | Version        |
+| ------------------- | -------------- |
+| axios               | ^1.8.0         |
+| @playwright/test    | ^1.50.0        |
+| @better-fetch/fetch | ^1.0.0         |
+| Node.js             | 18, 20, 22, 24 |
+
+Tested in CI against Node.js 18, 20, 22, and 24.
 
 ## License
 

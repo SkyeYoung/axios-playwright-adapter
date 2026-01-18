@@ -5,6 +5,7 @@
     "": {
       "name": "axios-pw-adapter",
       "devDependencies": {
+        "@better-fetch/fetch": "^1.1.21",
         "@playwright/test": "^1.57.0",
         "@types/bun": "latest",
         "axios": "^1.13.2",
@@ -28,6 +29,8 @@
     "@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
 
     "@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "7.27.1", "@babel/helper-validator-identifier": "7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
+
+    "@better-fetch/fetch": ["@better-fetch/fetch@1.1.21", "", {}, "sha512-/ImESw0sskqlVR94jB+5+Pxjf+xBwDZF/N5+y2/q4EqD7IARUTSpPfIo8uf39SYpCxyOCtbyYpUrZ3F/k0zT4A=="],
 
     "@bunup/dts": ["@bunup/dts@0.14.46", "", { "dependencies": { "@babel/parser": "7.28.5", "coffi": "0.1.37", "oxc-minify": "0.93.0", "oxc-resolver": "11.16.2", "oxc-transform": "0.93.0", "picocolors": "1.1.1", "std-env": "3.10.0", "ts-import-resolver": "0.1.23" }, "optionalDependencies": { "typescript": "5.9.3" } }, "sha512-3U1cTvieC7Qjrwiqi8kwWIDwnhTcJvCJF6qc492oo+1pd9bvgScpd24ZCAox0YXo1a5UmqgxQKzGVXqzCrCnFQ=="],
 
